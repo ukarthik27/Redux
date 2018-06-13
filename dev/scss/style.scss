@@ -1,5 +1,100 @@
 $primary: #006699;
-
-h2 {
+#todo-list{
+	//border: 1px solid black;
+	position: relative;
+	white-space: nowrap;
+	width : 295px;
+	left : 40%;
+	top : 100px;
+	margin: 0px;
+}
+#item {
+	box-sizing: border-box;
+	padding-left: 3px;
+	padding-top : 5px;
+	padding-bottom: 5px;
+	height: 2em;
+	width : 300px;
+	font-size: 1.3em;
+	display: block;
+	
+}
+#heading {
 	color: $primary;
+	font-size: 2em;
+	text-align: center;
+}
+
+li {
+	list-style-type: none ;
+	border: 0.5px solid #f2f2f2;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 3px;
+	padding-left: 1.5em;
+	cursor: default;
+	font-size: 1.3em;
+	//height: 1em;
+	
+}
+#rm-btn {
+	font-family: Arial;
+	cursor: pointer;
+	color :red;
+	position: absolute;
+	right: 5px;	
+	display: inline;
+}
+#edit-btn {
+	font-family: Arial;
+	color :red;
+	cursor: pointer;
+	position: absolute;
+	right: 22px;	
+	size: 0.5em;
+	display: inline;
+}
+#completed-btn {
+	display: block;
+	cursor: pointer;
+	//background: white;
+	color : #006699;
+	border: 0px;	
+}
+#completed-btn:hover {
+	background : #f2f2f2;
+}
+#completed-btn:active {
+	transform: translateX(1px);
+}
+#completed-btn:focus {outline:none}
+.done-btn {
+	position: absolute;
+	cursor: pointer;
+	left : 5px;
+	font-family: Arial;
+	color : white;
+	position: absolute;
+	right: 5px;	
+	margin-top : 3px;
+	border-radius: 10px;
+	padding-left : 3px;
+	padding-top : 1px;
+	padding-bottom : 1px;
+	height : 1em;
+	font-size: .75em;	
+	width : 1em;
+	background : rgba(255, 0, 0, 0.589);
+	// display: inline;
+}
+#task-list {
+	position: relative;
+	box-sizing: border-box;
+	word-break: break-all;
+	white-space: normal;
+	margin-top: 0px;
+	padding: 0px;
+	
+	width: 300px;
+	box-shadow: 2px 2px 2px #bbb;
 }

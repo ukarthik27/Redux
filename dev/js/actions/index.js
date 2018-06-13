@@ -1,7 +1,8 @@
-export const selectUser = (user) => {
-    console.log("You clicked on user: ", user.first);
+//var arr = [];
+export const AddItem = (item) => {
+    console.log("added");
     return {
-        type: 'USER_SELECTED',
-        payload: user
+        type: 'ITEM_ADDED',
+        payload: item
     }
 };
